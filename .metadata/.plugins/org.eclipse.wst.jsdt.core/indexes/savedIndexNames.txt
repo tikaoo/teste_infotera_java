@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\patri\OneDrive\Área de Trabalho\teste_infotera\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3078077042.index
+2429082796.index
+238290134.index
+3466961716.index
+1927823109.index
+4170027622.index

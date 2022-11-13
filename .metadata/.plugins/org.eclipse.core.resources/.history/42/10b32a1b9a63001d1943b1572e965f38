@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content- Type" content="text/html; charset=UTF-8" />
+<title>InfoTera</title>
+</h:head>
+<h:body>
+	<h1>Cadastro_Infotera</h1>
+
+	<h:form id="form1">
+		<p:panel header="ID cliente: ">
+			<p:panelGrid columns="3">
+Lista clientes por ID:
+<p:inputText value="#{contatoUm.buscarId}" />
+				<p:commandButton value="Listar todos Cadastrados" action="#{contatoUm.buscarId()}"
+					update="form1" />
+			</p:panelGrid>
+		</p:panel>
+		<br />
+
+		<p:panel header="Dados cliente: ">
+			<p:panelGrid columns="3">
+
+Nome:
+<h:inputText value="#{contatoUm.cliente.nome} " />
+<p:commandButton value="Incluir" action="#{contatoUm.incluir}" />
+<p:commandButton value="Editar/Atualizar" action="#{contatoUm.atualizar}" />
+<p:commandButton value="Excluir" action="#{contatoUm.remover}" />
+				<br />
+Email:
+<h:inputText value="#{contatoUm.cliente.email} " />
+				<br />
+CEP:
+<h:inputText value="#{contatoUm.cliente.cep} " />
+				<br />
+Endereco:
+<h:inputText value="#{contatoUm.cliente.endereco} " />
+				<br />
+Bairro:
+<h:inputText value="#{contatoUm.cliente.bairro} " />
+				<br />
+Complemento:
+<h:inputText value="#{contatoUm.cliente.complemento} " />
+				<br /> 
+Estado:
+<h:inputText value="#{contatoUm.cliente.estado} " />
+				<br />
+Cidade:
+<h:inputText value="#{contatoUm.cliente.cidade} " />
+				<br />				
+				
+Tel:
+<h:inputText value="#{contatoUm.cliente.telefone} " />
+			</p:panelGrid>
+			
+			<p:column>
+			<p:commandButton value="Incluir" action="#{contatoUm.incluir}" />
+			<p:commandButton value="Editar/Atualizar" action="#{contatoUm.atualizar}" />
+			<p:commandButton value="Excluir" action="#{contatoUm.remover}" />
+			</p:column>
+			<p:messages />
+		</p:panel>
+	</h:form>
+	<br />
+
+	<p:panel id="panel1" header="Lista de contatos">
+		<p:dataTable var="e" value="#{contatoUm.contatos}">
+			<p:column headerText="ID Cliente">
+				
+			</p:column>
+
+			<p:column headerText="Número do telefone: ">
+				
+			</p:column>
+
+			<p:column>
+				<p:commandButton value="Adicionar" action="#{contatoUm.incluir}" />
+				<p:commandButton value="Remover" action="#{contatoUm.remover}" />
+			</p:column>
+		</p:dataTable>
+	</p:panel>
+</h:body>
+</html>

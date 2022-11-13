@@ -1,0 +1,6 @@
+package br.cadastro_infotera.repository;
+
+@Repository
+public interface ClienteRepository  {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Congig&apos; to &apos;Config&apos;&#x0D;&#x0A;- Original project: &apos;Cadastro_infotera&apos;&#x0D;&#x0A;- Original element: &apos;Congig&apos;&#x0D;&#x0A;- Renamed element: &apos;Config&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Congig&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;{Congig.java[Congig" matchStrategy="1" name="Config" qualified="false" references="true" similarDeclarations="false" stamp="1668278454046" textual="false" version="1.0"/>
+</session>

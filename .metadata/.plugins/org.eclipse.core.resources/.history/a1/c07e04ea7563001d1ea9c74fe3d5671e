@@ -1,0 +1,5 @@
+package br.cadastro_infotera.contato.bean;
+
+public class ContatoUm {
+
+}

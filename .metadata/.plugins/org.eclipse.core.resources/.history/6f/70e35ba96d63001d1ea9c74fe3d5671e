@@ -1,0 +1,31 @@
+package br.cadastro_infotera.conexão;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class PropertiesMysql {
+	private static PropertiesMysql propertiesMysql;
+
+	public static PropertiesMysql getInstance() {
+		if (propertiesMysql == null) {
+			propertiesMysql = new PropertiesMysql();
+		}
+		return propertiesMysql;
+	}
+
+	public Connection getConnection() throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.jdbc.Driver");
+
+		return DriverManager.getConnection("jdbc:mysql://localhost:3306/cadastro_infotera", "root", "12345");
+	}
+
+	public static void main(String[] args) {
+		try {
+			System.out.println(getInstance().getConnection());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

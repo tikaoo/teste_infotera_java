@@ -1,0 +1,19 @@
+package br.cadastro_infotera.bean;
+
+import java.io.Serializable;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+
+import br.cadastro_infotera.model.Cliente;
+
+@Named
+@RequestScoped
+public class ClienteBean implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	Cliente cliente = new Cliente();
+	
+
+}

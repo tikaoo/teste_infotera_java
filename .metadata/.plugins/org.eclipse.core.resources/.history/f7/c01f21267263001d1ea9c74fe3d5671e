@@ -1,0 +1,34 @@
+package br.cadastro_infotera.bean;
+
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import br.cadastro_infotera.model.Cliente;
+
+@Stateless
+public class ClienteDois {
+	
+	@PersistenceContext
+	private EntityManager em;
+
+	public void insert(Cliente cliente) {
+		em.persist(cliente);
+	}
+
+	public void update(Cliente cliente) {
+		em.merge(cliente);
+	}
+
+	public void delete(Cliente cliente) {
+		System.out.println("Objeto: " + cliente.getId());
+
+		cliente = load(cliente.getId());
+		em.remove(cliente);
+	}
+
+	public Cliente load(Integer id) {
+		return em.find(Cliente.class, id);
+	}
+
+}

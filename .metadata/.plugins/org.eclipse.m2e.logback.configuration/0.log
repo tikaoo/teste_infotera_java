@@ -1,0 +1,15 @@
+2022-11-12 14:02:19,212 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-12 14:06:33,775 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-12 15:16:42,887 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-12 15:48:49,925 [main] INFO  org.eclipse.jetty.server.Server - jetty-10.0.6; built: 2021-06-29T15:28:56.259Z; git: 37e7731b4b142a882d73974ff3bec78d621bd674; jvm 17.0.4.1+1-LTS-2
+2022-11-12 15:48:49,948 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-11-12 15:48:49,977 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@146bf534{/wse,null,AVAILABLE}
+2022-11-12 15:48:50,003 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7b15b991{HTTP/1.1, (http/1.1)}{0.0.0.0:50163}
+2022-11-12 15:48:50,006 [main] INFO  org.eclipse.jetty.server.Server - Started Server@6c757a2f{STARTING}[10.0.6,sto=0] @1938846ms
+2022-11-12 23:34:23,768 [Framework stop - Equinox Container: 1ccd41fe-16a1-4bdb-b680-340bb1ed1653] INFO  org.eclipse.jetty.server.Server - Stopped Server@6c757a2f{STOPPING}[10.0.6,sto=0]
+2022-11-12 23:34:23,774 [Framework stop - Equinox Container: 1ccd41fe-16a1-4bdb-b680-340bb1ed1653] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7b15b991{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+2022-11-12 23:34:23,808 [Framework stop - Equinox Container: 1ccd41fe-16a1-4bdb-b680-340bb1ed1653] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@146bf534{/wse,null,STOPPED}
+2022-11-13 08:59:37,515 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-13 12:56:21,258 [Worker-281: Downloading sources for jsf-impl-2.3.17.SP01.jar] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/faces/jsf-impl/2.3.17.SP01/jsf-impl-2.3.17.SP01-sources.jar
+2022-11-13 17:20:07,480 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-13 18:56:32,610 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

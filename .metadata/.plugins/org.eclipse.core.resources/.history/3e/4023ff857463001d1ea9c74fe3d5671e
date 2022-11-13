@@ -1,0 +1,59 @@
+package br.cadastro_infotera.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+public class Contato {
+	@Entity
+	@Table(name = "tel")
+
+	public class Telefone implements Serializable {
+
+		private static final long serialVersionUID = 1L;
+		
+		@Id
+		private Integer id_tel;
+
+		private Integer telefone;
+		
+		@ManyToOne
+		private Cliente cliente;
+
+		public Integer getId_tel() {
+			return id_tel;
+		}
+
+		public void setId_tel(Integer id_tel) {
+			this.id_tel = id_tel;
+		}
+
+		public Integer getTelefone() {
+			return telefone;
+		}
+
+		public void setTelefone(Integer telefone) {
+			this.telefone = telefone;
+		}
+
+		public Cliente getCliente() {
+			return cliente;
+		}
+
+		public void setCliente(Cliente cliente) {
+			this.cliente = cliente;
+		}
+
+		public Telefone(Integer telefone) {
+			super();
+			this.telefone = telefone;
+		}
+
+		
+
+		
+	}
+}

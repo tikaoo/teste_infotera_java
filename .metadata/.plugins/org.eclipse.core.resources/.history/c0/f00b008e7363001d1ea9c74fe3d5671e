@@ -1,0 +1,22 @@
+package br.cadastro_infotera.Service;
+
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+
+import br.cadastro_infotera.model.Cliente;
+import br.cadastro_infotera.repository.ClienteRepository;
+
+@Stateless
+public class ClienteService {
+	
+	@EJB
+	private ClienteRepository clienteRepository;
+	
+	public void create(Cliente cliente) {
+		clienteRepository.persist(cliente);
+	}
+	
+	
+	
+
+}

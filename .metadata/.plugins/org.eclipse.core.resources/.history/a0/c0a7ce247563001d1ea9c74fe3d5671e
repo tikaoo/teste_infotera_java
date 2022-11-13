@@ -1,0 +1,36 @@
+package br.cadastro_infotera.contato.bean;
+
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import br.cadastro_infotera.model.Cliente;
+import br.cadastro_infotera.model.Contato;
+
+@Stateless
+public class ContatoDois {
+
+	
+		@PersistenceContext
+		private EntityManager entitymaneger;
+
+		public void incluir(Contato contato) {
+			entitymaneger.persist(contato);
+		}
+
+		public void atualizar(Contato contato) {
+			entitymaneger.merge(contato);
+		}
+
+		public void remover(Contato contato) {
+			System.out.println("Objeto: " + contato.getId_tel());
+
+			contato = load(contato.getId_tel());
+			entitymaneger.remove(contato);
+		}
+
+		public Contato load(Integer getId_tel) {
+			return entitymaneger.find(Contato.class, getId_tel);
+		}
+
+}

@@ -1,0 +1,51 @@
+package br.cadastro_infotera.contato.bean;
+
+import java.io.Serializable;
+
+import javax.ejb.EJB;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+
+import br.cadastro_infotera.model.Contato;
+
+@Named
+@RequestScoped
+public class ContatoUm implements Serializable{
+private static final long serialVersionUID = 1L;
+	
+	@EJB
+	private ContatoDois contatoDois;
+
+	private Contato contato;
+
+	public String inserir() {
+		contatoDois.incluir(contato);
+		return "";
+	}
+
+	public String alterar() {
+		contatoDois.atualizar(contato);
+		return "";
+	}
+
+	public String apagar() {
+		contatoDois.remover(contato);
+		return "";
+	}
+
+	public String novo() {
+		contato = new Contato();
+		return "" ;
+	}
+
+	public Contato getContato() {
+
+		if (contato == null) {
+			contato = new Contato();
+		}
+		return contato;
+	}
+
+}
+
+
